@@ -16,10 +16,10 @@ pkg install libandroid-support -y
 
 # Autorisation de stockage
 echo -e "\033[1;33m> Autorisation de stockage...\033[0m"
-termux-setup-storage -y
-
+termux-setup-storage
+pip install instagrapi --no-deps
 # Liste des modules Python à installer avec versions compatibles
-MODULES="telethon rich pillow==10.3.0 termcolor requests instagrapi==2.0.0"
+MODULES="telethon rich pillow termcolor requests"
 FAILED_MODULES=()
 SUCCESS_MODULES=()
 
